@@ -1,0 +1,4 @@
+
+
+Shared kernel and layers between containers
+https://stardomsolutions.blogspot.com/p/docker.html
