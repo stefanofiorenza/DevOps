@@ -1,0 +1,7 @@
+
+Official reference:
+https://tldp.org/LDP/Bash-Beginners-Guide/html/index.html
+
+
+All in one
+https://medium.com/sysf/bash-scripting-everything-you-need-to-know-about-bash-shell-programming-cd08595f2fba
