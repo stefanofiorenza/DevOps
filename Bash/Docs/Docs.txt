@@ -1,7 +1,39 @@
+OS:
 
-Official reference:
-https://tldp.org/LDP/Bash-Beginners-Guide/html/index.html
+	https://www.guru99.com/operating-system-tutorial.html
 
 
-All in one
-https://medium.com/sysf/bash-scripting-everything-you-need-to-know-about-bash-shell-programming-cd08595f2fba
+
+TUTORIALS:
+
+	Intro:
+
+	Conditionals:
+
+	Loops:
+	https://linuxconfig.org/bash-loops-with-examples
+	https://linuxize.com/post/bash-for-loop/
+	https://www.shellscript.sh/loops.html
+	
+
+	Arrays:
+	https://www.thegeekstuff.com/2010/06/bash-array-tutorial/
+
+
+	Functions:
+
+
+GUIDES:
+
+	Terminal commands
+	https://dev.to/awwsmm/101-bash-commands-and-tips-for-beginners-to-experts-30je
+
+	All in one
+	https://medium.com/sysf/bash-scripting-everything-you-need-to-know-about-bash-shell-programming-cd08595f2fba
+
+	Official reference:
+	https://tldp.org/LDP/Bash-Beginners-Guide/html/index.html
+
+	Reference:
+	https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html
+

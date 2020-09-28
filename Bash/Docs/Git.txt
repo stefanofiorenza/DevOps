@@ -1,8 +1,9 @@
 Git repo:
 https://gist.github.com/bradtraversy/ac3b1136fc7d739a788ad1e42a78b610
+
 https://github.com/tacksoo/bash_basics
 
-Basics
+Basics and Idee Tutorial
 https://github.com/ruanyf/simple-bash-scripts
 
 Basic with blog
