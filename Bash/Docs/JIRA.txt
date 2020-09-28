@@ -27,11 +27,12 @@ Variables And Operators:
 	- expression evaluation $()
 
 Conditional Logic (if..else)
+	- test command
 	- if [  ]
 	- if [ ( EXPR ) ]
 	- elif
 	- nested
-	- test expressions:
+	- test primary expressions:
 	https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_07_01.html
 	- Switch Case
 	
@@ -42,8 +43,9 @@ Loops:
 	- until
 
 Arrays:
-	
-	
+	- Create
+	- Read/Write
+	- Length
 	
 
 Functions:

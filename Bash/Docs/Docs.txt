@@ -5,3 +5,8 @@ https://tldp.org/LDP/Bash-Beginners-Guide/html/index.html
 
 All in one
 https://medium.com/sysf/bash-scripting-everything-you-need-to-know-about-bash-shell-programming-cd08595f2fba
+
+
+
+Arrays:
+https://www.thegeekstuff.com/2010/06/bash-array-tutorial/
