@@ -33,7 +33,7 @@
 #done
 
 #6) Legacy method for VARIABLE in $(seq BEGIN..STEP..END) 
-#for i in $(seq 1 2 20) # (start=1, step 2, end=20)
-#do
-#   echo $i 
-#done
+for i in $(seq 1 2 20) # (start=1, step 2, end=20)
+do
+   echo $i 
+done
