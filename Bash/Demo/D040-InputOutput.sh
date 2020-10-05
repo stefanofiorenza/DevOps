@@ -4,6 +4,9 @@
 ####################################
 #########BASIC INPUT/OUTPUT ##############
 
+    
+   
+
 #1) write on terminal 
 : '
     echo "this will be printed on std out"
@@ -54,12 +57,63 @@
 
     #2) read from standard input (keyboard) and redirect to file
     cat > inputSavedOnFile.txt # All lines will be saved in file until CTRL+D is pressed
-'
+
     #3) read file into command 
     # Syntax:    command < fileName
+    # Some examples to try one by one:
 
-   # grep 'some' < example.txt
-   
-   
 
-  
+        # grep "some" < example.txt
+
+        # echo $(<example.txt)   
+
+     #4) read file into var
+     FILE_CONTENT=$(<example.txt)
+     echo $FILE_CONTENT
+
+    #5) read one line from file into var
+    read -r rowVarName < example.txt
+    echo $rowVarName
+
+
+'
+
+
+
+
+
+
+
+
+
+
+####################################################
+######### USING ARRAYS AND LOOPS ###################
+
+: '
+echo $(<example.txt)
+
+CONTENT="`cat example.txt`"
+
+while read line; do
+    echo "line:$line"
+done < example.txt
+
+ declare  -a myArray
+ read -d \n -a myArray < example.txt
+echo $myArray[0]
+
+
+while IFS= read -r line
+do
+  echo "$line"
+done < example.txt
+
+
+#doesnt work
+   read -r line < example.txt
+'
+
+
+#########################################
+#########PIPES ###################

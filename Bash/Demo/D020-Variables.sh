@@ -13,7 +13,7 @@
     NAME1='Stefano-1'
     _NAME_SINGLE_QUOTE='StartWithUnderscore-Stefano-1'
 
-    # Illegal names (15 -19 reported in standard error):
+    # Illegal names (17 -23 reported in standard error):
     1NAME="Stefano" # can't start with number
     $NAME="Stefano" # can't start with symbols other than underscore
     %NAME="Stefano" # can't start with symbols other than underscore
