@@ -1,11 +1,6 @@
-#1. test and shortcut
+#! /usr/bin/env bash
 
-[ 11 -lt 9 ]
-echo $?
-
-
-
-#2. If Block (No Else)
+#1. If Block (No Else)
 : '
 PROCEED=YES
 if [ "$PROCEED" = "YES" ]
@@ -15,7 +10,9 @@ fi
 '
 
 
-#3. If-Else-If
+#2. If-Else-If
+# See other comparison operators https://www.shellscript.sh/quickref.html
+
 : ' 
 VALUE=-10
 if [ "$VALUE" -lt 0 ]; then
@@ -28,3 +25,11 @@ fi
 '	
 
 	
+
+VALUE=10
+if [ $VALUE -ge 1 ]  && [ $VALUE -le 10  ]; then
+    echo "VALUE is in interval"
+else
+    echo "VALUE is NOT in interval"
+fi
+

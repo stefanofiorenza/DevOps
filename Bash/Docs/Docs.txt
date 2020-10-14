@@ -9,6 +9,8 @@ TUTORIALS:
 	Intro:
 
 	Conditionals:
+	https://www.baeldung.com/linux/conditional-expressions-shell-script
+	
 
 	Loops:
 	https://linuxconfig.org/bash-loops-with-examples

@@ -59,7 +59,7 @@
     echo $RES;
 '
   
-#5) # Arithmetic Operators (available for both Extension or $(expr) ):
+#5) # Arithmetic Operators (available for both Expansion or $(expr) ):
 
 : '
     # With expr
@@ -69,28 +69,39 @@
      expr 5 \* 3    #  symbol * needs to be escaped
      expr 20 / 4
 
-'
-    # With expr
+
+    # With Arithmetic Expansion
     echo $(( 5 - 3))
     echo $((3 + 5))
     echo $(( 15 % 3))
     echo $(( 5 * 3))    #  no need to escape *
     echo $(( 20 / 4))
+'
 
-
- #6) Logical and Boolean Operators (available for both Extension or $(expr) ):
+ #6) Logical and Boolean Operators (available for both Expansion or $(expr) ):
 
     # return either
     # 0 = false
     # 1 = true
 
 : '
-    # with expr:
     myBoolVar1=$( expr 5 \<= 3 ) #  symbol < needs to be escaped 
     myBoolVar2=$( expr 5 \>= 3 ) #  symbol < needs to be escaped 
     myBoolVar3=$( expr 5 \!= 3 )#  symbol ! needs to be escaped 
     myBoolVar4=$( expr 5 == 3 )
     echo " 5<=3 is false:  $myBoolVar1"       
+    echo " 5>=3 is true: $myBoolVar2"      
+    echo " 5!=3 is true: $myBoolVar3"      
+    echo " 5==3 is false: $myBoolVar4"
+
+
+    # with Expansion:
+    myBoolVar1=$(( 5 <= 3 )) 
+    myBoolVar2=$(( 5 >= 3 )) 
+    myBoolVar3=$(( 5 != 3 ))
+    myBoolVar4=$(( 5 == 3 ))
+
+    echo " 5\<=3 is false:  $myBoolVar1"       
     echo " 5>=3 is true: $myBoolVar2"      
     echo " 5!=3 is true: $myBoolVar3"      
     echo " 5==3 is false: $myBoolVar4" 
