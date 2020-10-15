@@ -8,6 +8,9 @@
 # Those 2 are some kind of hacks around it
 
 #2) Comment on Many lines
+
+: this will be also ignored. To wrap comment in more lines it needs single quote char
+
 : '
 this is a comment on many lines
 - starts with colon      ATTENTION: no Leading space

@@ -21,7 +21,7 @@
 #done
 
 #4) for Var in Range
-#for VARIABLE in {1..7} # all files in this dir 
+#for VARIABLE in {1..7} # all numbers in interval
 #do
 #	echo $VARIABLE
 #done
@@ -33,7 +33,9 @@
 #done
 
 #6) Legacy method for VARIABLE in $(seq BEGIN..STEP..END) 
+: '
 for i in $(seq 1 2 20) # (start=1, step 2, end=20)
 do
    echo $i 
 done
+'

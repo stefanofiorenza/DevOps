@@ -16,7 +16,7 @@
      echo -n "Enter a name:"
      read NAME
      echo "Your name is:" $NAME
-#'
+'
 
 
 
@@ -64,7 +64,6 @@
 
 
         # grep "some" < example.txt
-
         # echo $(<example.txt)   
 
      #4) read file into var
@@ -74,12 +73,41 @@
     #5) read one line from file into var
     read -r rowVarName < example.txt
     echo $rowVarName
+'
 
+    #1) read from  standard input (keyboard)
+: '
+    read NAME
+    echo $NAME
+'
 
+    #2) read from standard input (keyboard) and redirect to file
+     # cat > inputSavedOnFile.txt # All lines will be saved in file until CTRL+D is pressed
+
+    #3) read file into command 
+: '
+    # Syntax:    command < fileName
+    # Some examples to try one by one:
+
+        # grep "some" < example.txt
+'    
+ 
+
+     #4) read file into var
+: '
+    FILE_CONTENT=$(<example.txt)
+    echo $FILE_CONTENT
+'
+
+    #5) read one line from file into var
+: '   
+    read -r rowVarName < example.txt
+    echo $rowVarName
 '
 
 
-
+# MORE ON:
+# 
 
 
 
