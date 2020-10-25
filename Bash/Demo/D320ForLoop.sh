@@ -15,7 +15,7 @@
 #done
 
 #3) for $(expression-returning-an-array-of-values)
-#for VARIABLE in $(ls) # all files in this dir 
+#for VARIABLE in $(ls) # all file names in this dir 
 #do
 #	echo $VARIABLE
 #done
@@ -37,5 +37,26 @@
 for i in $(seq 1 2 20) # (start=1, step 2, end=20)
 do
    echo $i 
+done
+'
+
+#7) For Loop with break and continue:
+: '
+for (( FLAG=100; FLAG>0; FLAG=FLAG-1 ))
+do
+
+   if (( $FLAG % 2 != 0 ))
+   then
+        #echo " Odd number "
+		continue
+	fi
+
+   if (( $FLAG == 10 ))
+         then 
+         # echo " Found 10"
+         break
+    fi
+
+	echo $FLAG
 done
 '

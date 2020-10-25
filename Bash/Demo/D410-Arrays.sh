@@ -8,7 +8,7 @@
 
 	#1) Explicit declaration
 	#declare -a arrayname=(element1 element2 element3) # Attention!! Lower case a for indexed arrays
-		declare -a ARRAY1=(1 2 3 'Stefano')
+		# declare -a ARRAY1=(1 2 3 'Stefano')
 
 
 	#2) Declare and initialize (values are always strings)
