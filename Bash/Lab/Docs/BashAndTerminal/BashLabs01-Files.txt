@@ -1,0 +1,10 @@
+
+FILES
+
+
+
+
+1) Write all file details from current dir in a csv format
+2) Filter only the one from date X
+3) Sort them
+

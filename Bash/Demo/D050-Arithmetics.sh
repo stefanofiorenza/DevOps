@@ -113,3 +113,4 @@
     myBoolVarArithmExpansion=$(( 5 > 3))
     echo  $myBoolVarArithmExpansion
 '
+

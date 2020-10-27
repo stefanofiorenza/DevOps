@@ -1,6 +1,25 @@
+#! /usr/bin/env bash
 
-# current script name
-echo $0
+declare -a FILES
+let I=0
 
-# current directory files
-echo *
+for FILE in $(ls) # all file names in this dir 
+do
+	FILES[$I]=$FILE
+    echo ${FILES[$I]}
+    I=$I+1  
+done
+
+#1) Array Length
+echo ${#FILES[@]}
+
+#2) access all ${arrayVar[@]}
+echo ${FILES[@]}
+
+
+#3) access by position ${arrayVar[index]}
+echo ${FILES[3]}
+
+
+
+

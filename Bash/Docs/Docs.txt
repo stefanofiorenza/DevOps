@@ -49,6 +49,10 @@ TUTORIALS:
 	https://www.baeldung.com/linux/bash-string-manipulation
 	https://tldp.org/LDP/abs/html/string-manipulation.html
 	https://www.thegeekstuff.com/2010/07/bash-string-manipulation/
+	
+	Printf and Formatting:
+	https://linuxize.com/post/bash-printf-command/
+
 
 	Functions:
 	https://linuxize.com/post/bash-functions/
