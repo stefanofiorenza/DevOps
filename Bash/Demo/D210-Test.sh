@@ -25,8 +25,7 @@ which [
 
 # 3.2) test alias [ condition ] ATTENTION Leave space between operators
 : '
-   
-'
- MY_VAR="stefano"
+  MY_VAR="stefano"
   #  [ $MY_VAR = "stefano" ]  && echo "They are equals"
-   [ $MY_VAR = "stefano2" ]  && echo "They are equals" || echo "They are NOT equals"
+   [ $MY_VAR = "stefano2" ]  && echo "They are equals" || echo "They are NOT equals"  
+'

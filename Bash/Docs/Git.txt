@@ -23,3 +23,7 @@ https://github.com/JiangKeshu/bash_exercises
 
 
 https://www.youtube.com/watch?v=oxuRxtrO2Ag
+
+
+
+https://github.com/PacktPublishing/Complete-Bash-Shell-Scripting-

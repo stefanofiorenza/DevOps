@@ -23,6 +23,8 @@ while [  $COUNTER -lt 10 ]; do
 done
 '
 
+
+
 #2) With Arithmetic Expansion:
 : '
 COUNTER=0
@@ -32,6 +34,7 @@ while ((  $COUNTER < 10 )); do
     let COUNTER=COUNTER+1 
 done
 '
+
 
 #3) While .. break (alternative exit condition)
 : '
@@ -61,7 +64,7 @@ do
     then
         #echo " Odd number "
 		continue
-	fi
+	  fi
 
     if [ $FLAG == 10 ]
          then 
@@ -71,6 +74,6 @@ do
 
     echo "FLAG is "$FLAG
 done
-'
 
+'
 

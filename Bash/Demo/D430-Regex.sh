@@ -11,31 +11,10 @@ y=2
 pat='B*c'
 
 
+# Using Parameter Expansion ${ paramterExpression }
+# echo -e enable escape characters (\t \n ..)
 
-########################################################################
-######### Quotes and escape chars in echo ###########################
-########################################################################
-
-#0) About quoting strings
-<< 'QUOTES-IN-BASH'
-echo '${var}'  # single quote use all symbols as literals (doesnt run code)
-echo  "${var}" # double quote are intepreted as symbols and substitution occurs if needed
-
-# if [ $alphabet \> $var]; then echo '$alphabet > $var  : true '; else echo '$alphabet > $var : false ' ; fi # this will give exception too many parameters
-# if [[ $alphabet > $var ]]; then echo '$alphabet > $var  : true '; else echo '$alphabet > $var : false ' ; fi # DOUBLE [[ and no escape on > will work resolving the string with whitespaces
-
-QUOTES-IN-BASH
-
-#0) echo -e enable escape characters (\t \n ..)
-echo '${var}' "\t" 'another string ' # echo doesnt escape chars (\n, \t, ..) by default....
-echo -e '${var}' "\t" 'another string ' # ...It needs -e flag to do so
-
-
-
-########################################################################
-######### Using Parameter Expansion ${ paramterExpression } #########
-########################################################################
-
+  
 #1) String length
 << 'STRING-LENGTH'
 echo '${var}' "${var}"   # Value in $var
@@ -77,30 +56,12 @@ REPLACE-BY-PATTERN
 
 
 #5) Use expr command
-<< 'EXPR-FUNCTIONS'
 echo $(expr length $alphabet ) # Length of string
 echo $(expr substr $alphabet 3 3) # extract substring
 echo $(expr index $alphabet b) # position of char b if any
 echo $(expr index $alphabet z) # position of char z NOT FOUND
 echo $(expr index $empty a) # position of char z -> Syntax error on empty string
-EXPR-FUNCTIONS
 
-
-#6) string comparisation
-<< 'STR-COMPARISATION'
-if [[ $alphabet = $alphabet ]] ; then echo '[ $alphabet = $alphabet ]: true ' ; else echo  '[ $alphabet = $alphabet ]: false '; fi
-if [[ $alphabet != $alphabet ]]; then echo '[ $alphabet != $alphabet ]: true ' ; else echo  '[ $alphabet != $alphabet ]: false '; fi
-if [[ $var == *text* ]]; then echo '[[ $var == *text* ]]: true ' ; else echo  '[[ $var == *text* ]]: false '; fi # partial Match (contains literal case sensitive)
-if [[ "$alphabet" > "$var" ]]; then echo '$alphabet > $var  : true '; else echo '$alphabet > $var : false ' ; fi
-if [[ "$alphabet" < "$var" ]]; then echo '$alphabet < $var  : true '; else echo '$alphabet < $var : false ' ; fi
-if [[ -z "$empty" ]]; then echo '-z "$empty" : true '; else echo '-z "$empty" : false ' ; fi # -z string - True if the string length is zero.
-if [[ -n "$empty" ]]; then echo '-n "$empty" : true '; else echo '-n "$empty" : false ' ; fi # -n string - True if the string length is non-zero.
-STR-COMPARISATION
-
-
-
-#7) regular expression matching
-# if [[ "$alphabet" =~  .*bcd.* ]]; then echo '$alphabet ~=*bcd* : true '; else echo '$alphabet ~=*bcd* : false ' ; fi #  string ~= regular expression
 
 
 # More examples at: http://www.tldp.org/LDP/abs/html/string-manipulation.html

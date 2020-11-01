@@ -18,10 +18,10 @@
 
 	TERMINAL AND COMMAND LINE
 
-		Command Line: (With timeline)
+		Command Line@Geek's Lesson: (With timeline)
 		https://www.youtube.com/watch?v=2PGnYjbYuUo
 
-		Terminal Commands with time line
+		Terminal Commands with time line@Joe Collins
 		https://www.youtube.com/watch?v=oxuRxtrO2Ag
 
 
@@ -30,6 +30,18 @@
 
 		Debug and common mistakes (vars and text) worth as begin
 		https://www.youtube.com/watch?v=0n8-GUz8vKw
+
+
+	LABS:
+	
+	https://www.youtube.com/watch?v=nVt3Rst-2H8&list=PL7B7FA4E693D8E790&ab_channel=TheBadTutorials
+	
+	Tutorials@kubucation
+	https://www.youtube.com/playlist?list=PLShDm2AZYnK1SdG3dufPdCqk08sOahUBP
+
+	Tutorials@Bad Tutorials
+	https://www.youtube.com/playlist?list=PL7B7FA4E693D8E790
+
 
 	LINUX:
 

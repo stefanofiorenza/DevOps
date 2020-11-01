@@ -50,6 +50,11 @@ TUTORIALS:
 	https://tldp.org/LDP/abs/html/string-manipulation.html
 	https://www.thegeekstuff.com/2010/07/bash-string-manipulation/
 	
+	Strings.tr
+	https://linuxhint.com/bash_tr_command/
+	https://www.tecmint.com/tr-command-examples-in-linux/
+	
+	
 	Printf and Formatting:
 	https://linuxize.com/post/bash-printf-command/
 
