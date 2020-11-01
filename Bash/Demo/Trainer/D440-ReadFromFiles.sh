@@ -20,7 +20,8 @@ done < example.txt
 
 #3) Is possible to read each line in tokens setting the IFS separator 
 
-echo $IFS
+printf '%q\n' "$IFS"
+
 IFS="=" # Internal Field Separator IFS (default <space><tab><newline>)
 
 while read -r key value

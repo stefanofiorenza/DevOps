@@ -8,9 +8,6 @@ mirror='abcABC123ABCabc'
 empty=''
 x=3
 y=2
-pat='B*c'
-
-
 
 ########################################################################
 ######### Quotes and escape chars in echo ###########################
@@ -23,13 +20,13 @@ echo  "${var}" # double quote are intepreted as symbols and substitution occurs 
 
 # if [ $alphabet \> $var]; then echo '$alphabet > $var  : true '; else echo '$alphabet > $var : false ' ; fi # this will give exception too many parameters
 # if [[ $alphabet > $var ]]; then echo '$alphabet > $var  : true '; else echo '$alphabet > $var : false ' ; fi # DOUBLE [[ and no escape on > will work resolving the string with whitespaces
-
 QUOTES-IN-BASH
 
 #0) echo -e enable escape characters (\t \n ..)
+<< 'ECHO-ESCAPE'
 echo '${var}' "\t" 'another string ' # echo doesnt escape chars (\n, \t, ..) by default....
 echo -e '${var}' "\t" 'another string ' # ...It needs -e flag to do so
-
+ECHO-ESCAPE
 
 
 ########################################################################
@@ -47,13 +44,13 @@ STRING-LENGTH
 
 #2) Case Conversion 
 << 'CASE-CONVERSION'
-echo -e 'Value in ${var}: ' "\t\t\t"                      "${var}"              # Value in $var
-echo -e 'Upper case first ${var}: ' "\t\t"                "${var~}"             # Upper case first
-echo -e 'Transpose Case for ${var} :' "\t\t"              "${var~~}"            # Transpose Case
-echo -e 'Lower case first for ${varUppercase} :' "\t"     "${varUppercase,}"    # Lower case first
-echo -e 'Lower case all for ${varUppercase} :' "\t"       "${varUppercase,,}"   # Lower case all
-echo -e 'Upper case first in ${var}' "\t\t"               "${var^}"             # Upper case first
-echo -e 'Upper case all ${var}' "\t\t\t"                  "${var^^}"            # Upper case all
+echo -e 'Value in ${var}:                        ' "\t\t"      "${var}"              # Value in $var
+echo -e 'Swap upper/lower case first ${var}:     ' "\t\t"      "${var~}"             # Swap upper/lower case on first char 
+echo -e 'Transpose Case for ${var} :             ' "\t\t"      "${var~~}"            # Swap upper/lower case on whole string
+echo -e 'Lower case first for ${varUppercase} :  ' "\t\t"      "${varUppercase,}"    # Lower case first
+echo -e 'Lower case all for ${varUppercase} :    ' "\t\t"      "${varUppercase,,}"   # Lower case all
+echo -e 'Upper case first in ${var}              ' "\t\t"      "${var^}"             # Upper case first
+echo -e 'Upper case all ${var}                   ' "\t\t"      "${var^^}"            # Upper case all
 CASE-CONVERSION
 
 #3) Extract substring positional # 0-based index

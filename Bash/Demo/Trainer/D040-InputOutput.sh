@@ -105,43 +105,17 @@
     echo $rowVarName
 '
 
-
-# MORE ON:
-# 
-
-
-
-
-
-
-
-####################################################
-######### USING ARRAYS AND LOOPS ###################
-
-: '
-echo $(<example.txt)
-
-CONTENT="`cat example.txt`"
-
-while read line; do
-    echo "line:$line"
-done < example.txt
-
- declare  -a myArray
- read -d \n -a myArray < example.txt
-echo $myArray[0]
-
-
-while IFS= read -r line
-do
-  echo "$line"
-done < example.txt
-
-
-#doesnt work
-   read -r line < example.txt
+#6 read -p (prompt) $"<string with escape interpreted> "
+:'
+read -p $'Insert data on new line \n' DATA 
+echo $DATA
 '
 
 
-#########################################
-#########PIPES ###################
+
+# Read more here:
+# https://www.gnu.org/software/bash/manual/html_node/ANSI_002dC-Quoting.html#ANSI_002dC-Quoting
+
+
+
+

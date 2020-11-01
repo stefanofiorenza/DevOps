@@ -99,4 +99,12 @@
 		#echo ${ARRAY1[@]} # after
 	'
 	
+#7) Remove element by key (associative array)
+
+
+
+: '
+read  -p 'Read N variables into array  ' -a ARRAY_FROM_INPUT
+echo ${ARRAY_FROM_INPUT[@]}
+'
 	
