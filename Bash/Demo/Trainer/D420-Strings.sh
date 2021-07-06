@@ -30,7 +30,7 @@ ECHO-ESCAPE
 
 
 ########################################################################
-######### Using Parameter Expansion ${ paramterExpression } #########
+######### Using Parameter Expansion ${ parameterExpression } #########
 ########################################################################
 
 #1) String length

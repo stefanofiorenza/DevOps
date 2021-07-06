@@ -11,9 +11,8 @@ printf "4th message"
 '
 
 #1)  printf format symbols
-
+<< 'PRINTF'
 alphabet='abcdefghi'
-
 printf "This is substitution of symbol (%%s) %s  \n" $alphabet
 printf "This is substitution of symbol (%%.5s) %.5s \n" $alphabet # will print abcde
 printf "This is substitution of symbol (%%.3s) %.3s \n" $alphabet # will print abc
@@ -24,7 +23,7 @@ printf "This is substitution of symbol (%%.3f) %.3f inside a longer text \n" 100
 printf "This is substitution of symbol (%%b) %b this will go on next line \n" "string \t with escaped (tab) interpreted \n"
 printf 'this will go to a variable not printed ' -v varname
 echo "$varname printed by echo "
-
+PRINTF
 
 #More resources:
 # 

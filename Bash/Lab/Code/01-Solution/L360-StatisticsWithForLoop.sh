@@ -10,6 +10,7 @@
 ################################################################################
 
 
+
 read -p $'How many numbers you want to enter?: \n' HOW_MANY 
 
 read -p $' Insert Number \n' CURRENT 

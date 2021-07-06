@@ -106,11 +106,10 @@
 '
 
 #6 read -p (prompt) $"<string with escape interpreted> "
-:'
+<< 'READ-ON-NEW-LINE'
 read -p $'Insert data on new line \n' DATA 
 echo $DATA
-'
-
+READ-ON-NEW-LINE
 
 
 # Read more here:

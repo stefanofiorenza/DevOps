@@ -43,7 +43,7 @@ Labs:
 
 		3) Remove from array A all elements in B if present
 		
-		4) 
+
 	
 	
 

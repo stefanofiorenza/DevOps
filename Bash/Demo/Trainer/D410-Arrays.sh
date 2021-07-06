@@ -7,17 +7,18 @@
 ########################################
 
 	#1) Explicit declaration
-	: '
+	
 	#declare -a arrayname=(element1 element2 element3) # Attention!! Lower case a for indexed arrays
-		# declare -a ARRAY1=(1 2 3 "Stefano")
-	'
+	# declare -a ARRAY1=(1 2 3 "Stefano")
+	
 
 	#2) Declare and initialize (values are always strings)
-	: '
+: '
 		ARRAY1[0]="1"
 		ARRAY1[1]="2"
 		ARRAY1[2]="3"
-		ARRAY1[3]="Stefano";
+		ARRAY1[3]="Stefano Fiorenza";
+	
 	'
 
 	#3) Associative array (keys instead of index)
@@ -38,14 +39,15 @@
 ########################################
 
 	#1) Array Length
-	#echo ${#ARRAY1[@]}
+	# echo ${#ARRAY1[@]}
 
 	#2) access all ${arrayVar[@]}
-	#echo ${ARRAY1[@]}
-
+	# echo ${ARRAY1[@]}
 
 	#3) access by position ${arrayVar[index]}
-	#echo ${ARRAY1[3]}
+	# echo ${ARRAY1[3]}
+
+	echo ${ARRAY1[3]}
 
 	#4) For.. Each   elements in ${ARRAY1[@]}
 	: '
@@ -61,6 +63,7 @@
 	do
 		echo ${ARRAY1[i]}
 	done
+	
 	'
 	
 ########################################
@@ -73,23 +76,27 @@
 	
 	#2) Extract by offset: ${<arrayVar>[@]:<startIndex>:<offset>}
 	#echo ${ARRAY1[@]:3:2} #extract 2 elements starting from 3 position
-	
+	# echo ${ARRAY1[@]:3:-2} 
+
 	#3) Search and Replace
 	#echo ${ARRAY1[@]/1/30}
 
 	#4) Add elements to existing array
-	: '
+: '
 		ARRAY1=("${ARRAY1[@]}" "5" "6")
 		
 		echo ${#ARRAY1[@]} # new length
 		echo ${ARRAY1[@]} # added data
+
+	
 	'
 		
 	#5) Remove element (by position) from existing array
 	: '
-		#echo ${ARRAY1[@]} # before
-		#unset ARRAY1[0]
-		#echo ${ARRAY1[@]} # after
+		echo ${ARRAY1[@]} # before
+		unset ARRAY1[0]
+		echo ${ARRAY1[@]} # after
+	
 	'
 		
 	#6) Remove element by key (associative array)
@@ -99,12 +106,8 @@
 		#echo ${ARRAY1[@]} # after
 	'
 	
-#7) Remove element by key (associative array)
-
-
-
 : '
-read  -p 'Read N variables into array  ' -a ARRAY_FROM_INPUT
+read  -p "Read N variables into array  " -a ARRAY_FROM_INPUT
 echo ${ARRAY_FROM_INPUT[@]}
 '
-	
+

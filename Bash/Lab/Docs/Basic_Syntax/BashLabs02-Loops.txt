@@ -6,11 +6,11 @@ Labs:
 
 
 	1) All Numbers?
-		I: number (max 50)
+		I: insert one number<= 50
 		O: echo all numbers until $number (exit 1 and echo for input exceptions)
 	
 	2) All ODD Numbers?	
-		I: number (max 50)
+		I: insert one number<= 50
 		O: echo all ODD numbers until $number (exit 1 and echo for input exceptions)
 		
 	3) All file names in current directory:
